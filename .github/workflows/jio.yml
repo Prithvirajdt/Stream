@@ -1,0 +1,120 @@
+name: Update Jio Playlist
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # --------------------------------------------
+      # STEP 1: CHECKOUT
+      # --------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # --------------------------------------------
+      # STEP 2: PREPARE FOLDER
+      # --------------------------------------------
+      - name: Prepare sources folder
+        run: mkdir -p sources
+
+      # --------------------------------------------
+      # STEP 3: DOWNLOAD SOURCE
+      # --------------------------------------------
+      - name: Download Jio playlist
+        env:
+          SRC_JTV: ${{ secrets.SRC_JTV }}
+        run: |
+          set -e
+          wget -q -O sources/jai_raw.m3u "$SRC_JTV"
+
+      # --------------------------------------------
+      # STEP 4: FILTER + CLEAN PLAYLIST
+      # --------------------------------------------
+      - name: Clean playlist
+        run: |
+          {
+            echo "#EXTM3U"
+            echo
+
+            awk '
+            BEGIN { IGNORECASE=1; keep=0 }
+
+            # -------- BLOCKLIST: NETWORK --------
+            # Broadcaster names (Zee, ETV, etc.)
+            function block_network(line) {
+              return (line ~ /asianet|etv |maa|cvr|gemini|jalsha|ktv|ptc|s super|raj t|raj d|raj m|mahaa|surya|udaya|vijay|suvarna|stingray|kairali|thirai|cinemalu|ZB|jio s|jio e|jiog|jion|jio h|sathee|apex|sun tv|sun life|sun music|jaya|sana |studio|mazha|sidharth|digital|public m|one|mh1|rang|k mar|+ mar|nick j|go mar|nic mar|aarya|naaptol|svbc|prabha|vidya|test/)
+            }
+
+            # -------- BLOCKLIST: LANGUAGE --------
+            # Regional languages
+            function block_language(line) {
+              return (line ~ /tamil|telugu|kannada|bangla|malayalam|english|punjab|rajasthan|gujarat|bengali|oriya|urdu|kerala|bangalore|haryan|delhi|uttar|pradesh|bihar|garh|assam|s mp|mp |s up|up |odia|karnataka|bhojpuri/)
+            }
+
+            # -------- BLOCKLIST: OTHER --------
+            # Misc unwanted channels
+            function block_other(line) {
+              return (line ~ /centa|yay|gyanv|kite|nipun|book|adith|amr|ott|brio|vision|arun|captain|girnar|kashir|north e|sapta|podhi|desi c|flower|friend|gangaur|jonack|kala|makkal|maya|mk s|moon|pepp|poli|yugam|roja|rong|sanjh|set sd|shark|spondon|aath|kiran|sundrani|by s|taiwan|vasanth|vissa|vendhar|vaan|sarthak|ayush|janap|malan|purnim|safari|sristi|teh|vanitha|chintu|chutti|kochu|kushi|vyasa|wellness|gomantak|alankar|prive|hiff|j mov|maha mov|mahua|pitaara|tabbar|zee pow|7x music|balle|oye music|ramdhenu|saga music|sikh|songdew|steelbird|tunes 6|ananda|asmita|abp ganga|bharat news tv|bharat tv24|buletin|bajar|dd news|dd y|india prime n|living|nation ne|sattax|today 24x|ne bharat|jklh|prime asia|ghanta|angel|aradhana|atmad|siri|bhakti tv|bvtv|calvary|win|daya|divya v|goodness|gospel|grace|bani|harvest|hhdl|dharmam|hosanna|war vani|jothi|jyothi|lakshya|lovew|madha|mercy|nambi|popli|prabhu s|prarthana|tv bhakthi|sadhna g|sai tv|shalom|shubhs|sybhav|vignesh|village|yeshuaa|z10|cnn news18|ndtv ind|News Nation$|zee business|demo/)
+            }
+
+            # -------- MASTER BLOCK CHECK --------
+            # If ANY block matches → remove channel
+            function is_blocked(line) {
+              return block_network(line) || block_language(line) || block_other(line)
+            }
+
+            # -------- NEWS ALLOW LIST --------
+            function is_allowed_news(line) {
+              return (line ~ /zee|aaj tak|ndtv|india|today|cnn|cnbc|abp|euro|asia|republic|wion|bharat|dd|sansad|lok|nation|bloomberg|firstpost|saam|yahoo|al j|DD|news18|tv9|now/)
+            }
+
+            # -------- PROCESS CHANNEL --------
+            /^#EXTINF/ {
+
+              is_news = ($0 ~ /group-title="News"/ || $0 ~ /group-title="Business News"/)
+
+              if (is_news) {
+                if (!is_blocked($0) && is_allowed_news($0)) {
+                  keep=1
+                  gsub(/group-title="Business News"/, "group-title=\"News\"", $0)
+                  gsub(/group-title="Education"/, "group-title=\"Educational\"", $0)
+                  print
+                } else {
+                  keep=0
+                }
+                next
+              }
+
+              if (is_blocked($0)) {
+                keep=0
+              } else {
+                keep=1
+                gsub(/group-title="Education"/, "group-title=\"Educational\"", $0)
+                print
+              }
+              next
+            }
+
+            # -------- PRINT STREAM URL --------
+            { if (keep==1) print }
+
+            ' sources/jai_raw.m3u
+          } > sources/jai.ent
+
+          rm -f sources/jai_raw.m3u
+
+      # --------------------------------------------
+      # STEP 5: COMMIT
+      # --------------------------------------------
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add sources/jai.ent
+          git commit -m "Update Jio playlist (jai.ent)" || echo "No changes"
+          git push

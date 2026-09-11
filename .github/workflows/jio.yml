@@ -77,12 +77,7 @@ jobs:
             # COMBINED BLACKLIST
             # ============================================
             function is_blocked(line) {
-              return (
-                blacklist_1(line) ||
-                blacklist_2(line) ||
-                blacklist_3(line) ||
-                blacklist_4(line)
-              )
+              return (blacklist_1(line) || blacklist_2(line) || blacklist_3(line) || blacklist_4(line))
             }
 
             # ============================================

@@ -49,7 +49,7 @@ jobs:
             # BLACKLIST CATEGORY 1 language
             # ============================================
             function blacklist_1(line) {
-              return (line ~ /test|malaya|tamil|telugu|kannada|odia|gujarat|bengali|bangla|test/)
+              return (line ~ /test|malaya|tamil|telugu|kannada|odia|gujarat|bengali|bangla|english|test/)
             }
 
             # ============================================
@@ -60,14 +60,14 @@ jobs:
             }
 
             # ============================================
-            # BLACKLIST CATEGORY 3
+            # BLACKLIST CATEGORY 3 region
             # ============================================
             function blacklist_3(line) {
               return (line ~ /test|test/)
             }
 
             # ============================================
-            # BLACKLIST CATEGORY 4
+            # BLACKLIST CATEGORY 4 other
             # ============================================
             function blacklist_4(line) {
               return (line ~ /test|test/)

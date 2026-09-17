@@ -73,7 +73,7 @@ jobs:
             # BLACKLIST CATEGORY 4 other
             # ============================================
             function blacklist_4(line) {
-              return (line ~ /test|bajar|bazaar|awaaz.|tv18.|hd nw|test/)
+              return (line ~ /test|bajar|bazaar|awaaz.|hd nw|test/)
             }
 
             # ============================================

@@ -955,12 +955,6 @@ https://hjh-545.pages.dev/stream?id=zeempchattisgarh
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=8f93e68cfa7e533082c24ae11049b7e1:576e7aece30f1840937fa93a02cd0a1f
 https://hjh-545.pages.dev/stream?id=zeerajasthan
-#EXTINF:-1 tvg-id="661" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Purvaiya.png" group-title="Bhojpuri",Zee Bihar Jharkhand
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9d09ea59dacb5ed7b3398d0dedbd150b:a31a72c840d59a0aee3f64655904ae10
-https://hjh-545.pages.dev/stream?id=zeebiharjharkhand
 #EXTINF:-1 tvg-id="691" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Saam_Tv.png" group-title="Marathi",Saam Tv
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
@@ -1026,12 +1020,6 @@ https://hjh-545.pages.dev/stream?id=9xtashan
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7f462e785a2c53649ab662034077766c:5c6b5dcfcea6528f915e4c3dad9c8e31
 https://hjh-545.pages.dev/stream?id=sangeetmarathi
-#EXTINF:-1 tvg-id="741" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sangeet_Bhojpuri.png" group-title="Bhojpuri",Sangeet Bhojpuri
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=77ac3922e3ae5597b2bb0a52afb88d0f:35030fa506bf92866f369da6d6e917fa
-https://hjh-545.pages.dev/stream?id=sangeetbhojpuri
 #EXTINF:-1 tvg-id="742" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/mh1_Music.png" group-title="Punjabi",mh1 (Music)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -1272,12 +1260,6 @@ https://hjh-545.pages.dev/stream?id=jantatv
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 https://hjh-545.pages.dev/stream?id=news11
-#EXTINF:-1 tvg-id="883" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Osar_Movies.png" group-title="Bhojpuri",Oscar Movies
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=dffd8ff7e53252f2bceed480c648da34:c6a04b8ddebffa6e4e72876e76ec02d7
-https://hjh-545.pages.dev/stream?id=oscarmovies
 #EXTINF:-1 tvg-id="885" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TV_5_Monde.png" group-title="English",TV5 Monde
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -1335,12 +1317,6 @@ https://hjh-545.pages.dev/stream?id=tv100
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=19a9ece44f385557af71b6d5e0f1aa9e:74bf1511c925d9ed9c58950bedca9cd6
 https://hjh-545.pages.dev/stream?id=bharatsamachar
-#EXTINF:-1 tvg-id="919" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Anjan_TV.png" group-title="Bhojpuri",Anjan TV
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d55c7b3f4588546791048bf5db57515e:320041f866594908ed6575e98a832c34
-https://hjh-545.pages.dev/stream?id=anjantv
 #EXTINF:-1 tvg-id="921" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Prime_News.png" group-title="News",Prime News
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -1830,12 +1806,6 @@ https://hjh-545.pages.dev/stream?id=eurosport
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://hjh-545.pages.dev/stream?id=b4ukadak
-#EXTINF:-1 tvg-id="1296" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Bhojpuri.png" group-title="Bhojpuri",B4U Bhojpuri
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4e32d7151dac5318a55bab88320ba70d:768c85f2155e292a5d63edcd7003d7f0
-https://hjh-545.pages.dev/stream?id=b4ubhojpuri
 #EXTINF:-1 tvg-id="1315" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/HHDL.png" group-title="English",HHDL
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -2248,12 +2218,6 @@ https://hjh-545.pages.dev/stream?id=bharatatoz
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f6051ae7a3b956a997e307f1893c0a5e:0781ecd4898e991a0a273aebafad8c55
 https://hjh-545.pages.dev/stream?id=hornbilltv
-#EXTINF:-1 tvg-id="1745" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeBiskope.png" group-title="Bhojpuri",Zee Biskope
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=36d43ee102d2546d8df9f2d1890f9205:b497e091b08d776d25950b73c19335f3,24e4bc0e77c35115a84ca6f560b89da8:74150238d982256e304dfdfcd30c0b9d,76f648b0b326519087b86a935d6b68f6:d77b914cb922450d354d7c10ee8624b4,aa52be06c12d51cdaace6b824de32120:9417fbf504035da78c665db0d24f629b,417f8f0a2b6b588e9e6c12e1346fa5d5:7e7d076be866a0fdea797b7adf2440a1
-https://hjh-545.pages.dev/stream?id=zeebiskope
 #EXTINF:-1 tvg-id="1751" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeePunjabi.png" group-title="Punjabi",Zee Punjabi
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -2302,12 +2266,6 @@ https://hjh-545.pages.dev/stream?id=shriamarnathjishrineboard
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f2417497fb6c5f7c9fe4f2c5640558fc:8e171ef0642df0c7c3e108658746cd51
 https://hjh-545.pages.dev/stream?id=danewsplus
-#EXTINF:-1 tvg-id="1798" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Pasand.png" group-title="Bhojpuri",Pasand
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1fb4e12edcc258c0ab5d863287d8a40c:d2d62b155754e8e26dc218c339cf6caf
-https://hjh-545.pages.dev/stream?id=pasand
 #EXTINF:-1 tvg-id="1804" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jan_Setu_TV.png" group-title="News",Jan Setu News
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -2415,12 +2373,6 @@ https://hjh-545.pages.dev/stream?id=timesnownavbharat
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 https://hjh-545.pages.dev/stream?id=etnowswadesh
-#EXTINF:-1 tvg-id="1925" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/MH1_DilSe.png" group-title="Bhojpuri",MH1 Dil Se
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=a0368669d2e05efcb4468b5a568c0a03:7c8c3dd7f4e33bd376bcfa8d82cbbdc8
-https://hjh-545.pages.dev/stream?id=mh1dilse
 #EXTINF:-1 tvg-id="1955" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Food_XP.png" group-title="Lifestyle",Foodxp
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -2685,12 +2637,6 @@ https://hjh-545.pages.dev/stream?id=indianewspunjab
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=dd905d06bd8b5bf88efb63ac0446d34d:db6c98a312df3704643f1e081566c732
 https://hjh-545.pages.dev/stream?id=tv24
-#EXTINF:-1 tvg-id="2229" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Bhojpuri_Junction.png" group-title="Bhojpuri",Bhojpuri Junction
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d82939a769ef55dfa754af1b70ff601f:3ca1137aaf4c1cf395608915cc4e3bc6
-https://hjh-545.pages.dev/stream?id=bhojpurijunction
 #EXTINF:-1 tvg-id="2230" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Specials_HD.png" group-title="English",Jio Specials HD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -3125,12 +3071,6 @@ https://hjh-545.pages.dev/stream?id=today24newsupuk
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=cbe64e70ea685164ac3a37b7717ad382:c9bce43ad84e8cbf4c7c771dc417c3e4
 https://hjh-545.pages.dev/stream?id=bharatupdate
-#EXTINF:-1 tvg-id="3069" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Captain.png" group-title="Bhojpuri",Captain
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=876b3301529f57faa642c44edfafa74e:aaa4c1f33768f4f9f4799cf9ed356785
-https://hjh-545.pages.dev/stream?id=captain
 #EXTINF:-1 tvg-id="3070" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Vistaar_News.png" group-title="News",Vistaar News
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -4039,12 +3979,6 @@ https://hjh-545.pages.dev/stream?id=epictv
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=531f0c69be995cc88d05324b15af383f:d8492685fcdc3d1367e86cfc5b685e07
 https://hjh-545.pages.dev/stream?id=epicbharat
-#EXTINF:-1 tvg-id="3384" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Filamchi_Bhojpuri.png" group-title="Bhojpuri",EPIC Bhojpuri
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=cff5580392c052a78302a940e350b02b:c4983c9e5cb98a14973664d0791a15bb
-https://hjh-545.pages.dev/stream?id=epicbhojpuri
 #EXTINF:-1 tvg-id="3385" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Gubbare.png" group-title="Kids",EPIC Kids
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd

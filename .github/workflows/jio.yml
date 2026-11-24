@@ -1,3 +1,4 @@
+
 name: Update Jio Playlist
 
 on:
@@ -36,7 +37,6 @@ jobs:
 
       # --------------------------------------------
       # STEP 4: FILTER PLAYLIST
-      #         + ONLY JIO GROUP-TITLE CHANNELS
       #         + APPLY 4 BLACKLIST CATEGORIES
       #         + ENSURE HEADER + BLANK LINE
       # --------------------------------------------
@@ -88,18 +88,11 @@ jobs:
             # ============================================
             /^#EXTINF/ {
 
-              # Keep ONLY channels whose group-title contains "jio tv"
-              if ($0 ~ /group-title="[^"]*jio tv[^"]*"/) {
-
-                if (is_blocked($0)) {
-                  keep=0
-                } else {
-                  keep=1
-                  print
-                }
-
-              } else {
+              if (is_blocked($0)) {
                 keep=0
+              } else {
+                keep=1
+                print
               }
 
               next

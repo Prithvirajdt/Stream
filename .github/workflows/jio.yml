@@ -77,6 +77,36 @@ jobs:
             }
 
             # ============================================
+            # GROUP-TITLE REPLACEMENT
+            # ============================================
+            function replace_group_title(line) {
+
+              # DEMO LINE 1
+              gsub(/group-title="Business News"/, "group-title=\"News\"", line)
+
+              # DEMO LINE 2 - CHANGE AS REQUIRED
+              # gsub(/group-title="Old Group"/, "group-title=\"New Group\"", line)
+
+              return line
+            }
+
+            # ============================================
+            # CHANNEL-SPECIFIC GROUP-TITLE REPLACEMENT
+            # ============================================
+            function replace_channel_group(line) {
+
+              # DEMO LINE 1
+              if (line ~ /Sony Marathi/)
+                sub(/group-title="Marathi"/, "group-title=\"Entertainment\"", line)
+
+              # DEMO LINE 2 - CHANGE AS REQUIRED
+              # if (line ~ /CHANNEL NAME/)
+              #   sub(/group-title="OLD GROUP"/, "group-title=\"NEW GROUP\"", line)
+
+              return line
+            }
+
+            # ============================================
             # COMBINED BLACKLIST
             # ============================================
             function is_blocked(line) {
@@ -87,6 +117,9 @@ jobs:
             # PROCESS CHANNELS
             # ============================================
             /^#EXTINF/ {
+
+              $0 = replace_group_title($0)
+              $0 = replace_channel_group($0)
 
               if (is_blocked($0)) {
                 keep=0

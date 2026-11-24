@@ -1289,13 +1289,6 @@ https://jiotvmblive.cdn.jio.com/bpk-tv/Lord_Buddha_MOB/WDVLive/index.mpd
 #EXTVLCOPT:http-user-agent=PlayTV/7.1.5 (Linux;Android 8.1.0) ExoPlayerLib/2.11.7
 #EXTHTTP:{"cookie":"__hdnea__=st=1795504076~exp=1795525676~acl=/*~hmac=1235e1ae4f815f7a4011a7ce9a9029c48fa6ccbc2c5423e9eb8bca3203dd37da"}
 https://jiotvmblive.cdn.jio.com/bpk-tv/Soham_TV_MOB/WDVLive/index.mpd
-#EXTINF:-1 tvg-id="1079" tvg-name="Cartoon Network HD+ English" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNHDEnglish.png" group-title="English", Cartoon Network HD+ English
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c9c415719be55a75b6533d2b4eed6269:23a7fab44583dfa0ff91c57324448b63
-#EXTVLCOPT:http-user-agent=PlayTV/7.1.5 (Linux;Android 8.1.0) ExoPlayerLib/2.11.7
-#EXTHTTP:{"cookie":"__hdnea__=st=1795504076~exp=1795525676~acl=/*~hmac=1235e1ae4f815f7a4011a7ce9a9029c48fa6ccbc2c5423e9eb8bca3203dd37da"}
-https://jiotvmblive.cdn.jio.com/bpk-tv/CNHDEnglish_MOB/WDVLive/index.mpd
 #EXTINF:-1 tvg-id="1104" tvg-name="Star Movies HD" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Movies_HD.png" group-title="English", Star Movies HD
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -3614,13 +3607,6 @@ https://jiotvmblive.cdn.jio.com/bpk-tv/AnimalPlanetHDHin_MOB/WDVLive/index.mpd
 #EXTVLCOPT:http-user-agent=PlayTV/7.1.5 (Linux;Android 8.1.0) ExoPlayerLib/2.11.7
 #EXTHTTP:{"cookie":"__hdnea__=st=1795504076~exp=1795525676~acl=/*~hmac=1235e1ae4f815f7a4011a7ce9a9029c48fa6ccbc2c5423e9eb8bca3203dd37da"}
 https://jiotvmblive.cdn.jio.com/bpk-tv/DiscoveryScienceHin_MOB/WDVLive/index.mpd
-#EXTINF:-1 tvg-id="3457" tvg-name="Cartoon Network HD+ Marathi" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNHDMarathi.png" group-title="Kids", Cartoon Network HD+ Marathi
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=386b078cd77b5c56adfc9f8b696330a3:7021cd1e2a105993f02efb099dd24f02
-#EXTVLCOPT:http-user-agent=PlayTV/7.1.5 (Linux;Android 8.1.0) ExoPlayerLib/2.11.7
-#EXTHTTP:{"cookie":"__hdnea__=st=1795504076~exp=1795525676~acl=/*~hmac=1235e1ae4f815f7a4011a7ce9a9029c48fa6ccbc2c5423e9eb8bca3203dd37da"}
-https://jiotvmblive.cdn.jio.com/bpk-tv/CNHDMarathi_MOB/WDVLive/index.mpd
 #EXTINF:-1 tvg-id="3458" tvg-name="TLC HD Hindi" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/TLCHDHindi.png" group-title="Lifestyle", TLC HD Hindi
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey

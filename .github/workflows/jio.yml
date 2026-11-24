@@ -59,7 +59,7 @@ jobs:
             # BLACKLIST CATEGORY 2 nework
             # ============================================
             function blacklist_2(line) {
-              return (line ~ /test|test/)
+              return (line ~ /test|streamx|test/)
             }
 
             # ============================================
@@ -85,7 +85,7 @@ jobs:
               gsub(/group-title="Business News"/, "group-title=\"News\"", line)
 
               # DEMO LINE 2 - CHANGE AS REQUIRED
-              # gsub(/group-title="Old Group"/, "group-title=\"New Group\"", line)
+              # gsub(/group-title="Educational"/, "group-title=\"Infotainment\"", line)
 
               return line
             }

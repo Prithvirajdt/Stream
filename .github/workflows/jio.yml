@@ -59,7 +59,7 @@ jobs:
             # BLACKLIST CATEGORY 2 nework
             # ============================================
             function blacklist_2(line) {
-              return (line ~ /test|streamx|test/)
+              return (line ~ /test|test/)
             }
 
             # ============================================

@@ -4,7 +4,7 @@ name: Update Jio Playlist
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '1 */3 * * *'
 
 
 
